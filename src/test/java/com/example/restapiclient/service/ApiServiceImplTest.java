@@ -21,6 +21,6 @@ public class ApiServiceImplTest {
     @Test
     public void getCategories() {
         List<Category> list = apiService.getCategories();
-        assertEquals(5, list.size());
+        assertEquals(6, list.size());
     }
 }

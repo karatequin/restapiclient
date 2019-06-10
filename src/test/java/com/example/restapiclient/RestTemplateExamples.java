@@ -21,7 +21,7 @@ public class RestTemplateExamples {
     public void getCategories(){
         String path = API_ROOT + "categories/";
         RestTemplate restTemplate = new RestTemplate();
-        JsonNode jsonNode = restTemplate.getForObject(path, JsonNode.class);
+            JsonNode jsonNode = restTemplate.getForObject(path, JsonNode.class);
 
         JsonNode categories = jsonNode.get("categories");
         List<Category> list = new ArrayList<>();
@@ -34,9 +34,17 @@ public class RestTemplateExamples {
 
     }
 
-    // 1. Lav din egen Category klasse med de to String attributter
-    // name og category_url DONE
-    // 2. Opret en Liste med Category objekter
-    // 3. opret et Category objekt for hver JsonNode cat objekt
-    // 4. Udskriv listen med alle Category objekterne
+
 }
+
+
+
+
+
+
+
+// 1. Lav din egen Category klasse med de to String attributter
+// name og category_url DONE
+// 2. Opret en Liste med Category objekter
+// 3. opret et Category objekt for hver JsonNode cat objekt
+// 4. Udskriv listen med alle Category objekterne
